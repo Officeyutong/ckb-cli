@@ -23,7 +23,7 @@ impl TuiSubCommand {
             .required(false);
         let arg_tcp_url= Arg::with_name("tcp-url").long("tcp-url").short('t').takes_value(true).required(false).about("TCP endpoint of CKB node, used for receiving pushed transactions data\nIf not provided, latest transactions and rejected transactions won't be displayed");
         let arg_refresh_interval = Arg::with_name("refresh-interval")
-            .long("refresh_interval")
+            .long("refresh-interval")
             .short('i')
             .default_value("300")
             .takes_value(true)
